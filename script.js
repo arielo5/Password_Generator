@@ -96,7 +96,7 @@ generateBtn.addEventListener("click", () => {
 
     console.log(generatedPassword);
 
-    passwordText.value = generatedPassword;
+    passwordText.value = generatedPassword.slice(0, leng);
   } 
 
 });
