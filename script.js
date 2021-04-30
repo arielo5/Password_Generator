@@ -1,7 +1,7 @@
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
 
-// 
+// Objects
 let randomFunc = {
   upper: getRandomUpper,
   lower: getRandomLower,
@@ -14,7 +14,7 @@ let hasUpper;
 let hasLower;
 let hasNumbers;
 let hasSymbol;
-let leng = +""; 
+let leng; 
 
 // Generator function
 function getRandomLower() {
@@ -94,13 +94,9 @@ generateBtn.addEventListener("click", () => {
       });
     }
 
-    console.log(generatedPassword);
+    console.log(generatedPassword.slice(0, leng));
 
     passwordText.value = generatedPassword.slice(0, leng);
   } 
 
 });
-
-
-
-
